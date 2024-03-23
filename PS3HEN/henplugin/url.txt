@@ -1,0 +1,1 @@
+https://api.github.com/repos/nikolaevich23/nikolaevich23.github.io/releases/latest

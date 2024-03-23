@@ -1,0 +1,1287 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+
+	<View id="seg_hfw_settings">
+		<Attributes>
+			<Table key="hfw_settings">
+				<Pair key="icon_rsc"><String>tex_basic</String></Pair>				
+				<Pair key="title_rsc"><String>msg_hfw_set</String></Pair>
+				<Pair key="info_rsc"><String></String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/folder-pixmap" key="hfw_settings" attr="hfw_settings" src="#seg_settings_menu"/>
+		</Items>
+	</View>
+
+	<View id="seg_settings_menu">
+		<Attributes>
+			<Table key="reboot_ps3">
+				<Pair key="icon_rsc"><String>tex_shutdown</String></Pair>
+				<Pair key="title_rsc"><String>msg_power_options_title</String></Pair>
+			</Table>
+			<Table key="psn_tools">
+				<Pair key="icon_rsc"><String>tex_psn_tools</String></Pair>
+				<Pair key="title_rsc"><String>msg_psn_tools_title</String></Pair>
+			</Table>
+			<Table key="dump_tools">
+				<Pair key="icon_rsc"><String>tex_dump</String></Pair>
+				<Pair key="title_rsc"><String>msg_dump_tools_title</String></Pair>
+			</Table>
+			<Table key="recovery_menu">
+				<Pair key="icon_rsc"><String>tex_recovery</String></Pair>
+				<Pair key="title_rsc"><String>msg_recovery_menu_title</String></Pair>
+			</Table>
+			<Table key="mode">
+				<Pair key="icon"><String>/dev_flash/vsh/resource/explore/icon/folder_update.png</String></Pair>				
+				<Pair key="title"><String>MODE</String></Pair>
+			</Table>
+			<Table key="ps3hen_maintenance">
+				<Pair key="icon_rsc"><String>tex_folder_list</String></Pair>				
+				<Pair key="title_rsc"><String>msg_hfw_maintenance</String></Pair>
+                <Pair key="info_rsc"><String>msg_hfw_maintenance_info</String></Pair>
+			</Table>																							
+			<Table key="int">
+				<Pair key="icon"><String>/dev_flash/vsh/resource/explore/icon/folder_plugin.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hfw_interface</String></Pair>
+                <Pair key="info_rsc"><String>msg_hfw_interface_info</String></Pair>
+			</Table>
+            <Table key="fan_settings">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_settings_title</String></Pair>
+			</Table>
+			<Table key="ps3hen_update">
+				<Pair key="icon"><String>/dev_flash/vsh/resource/explore/icon/folder_net_download.png</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemAlbum</String></Pair>
+				<Pair key="title_rsc"><String>msg_hfw_updater</String></Pair>
+				<Pair key="info_rsc"><String>msg_hfw_updater_info</String></Pair>
+			</Table>
+			<Table key="update_toolbox_main">
+				<Pair key="icon"><String>/dev_flash/vsh/resource/explore/icon/NP00PKGI3.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hfw_pkgi</String></Pair>
+				<Pair key="info_rsc"><String>msg_hfw_pkgi_info</String></Pair>
+ 			</Table>			
+		</Attributes>
+		<Items>			
+			<Query class="type:x-xmb/folder-pixmap" key="reboot_ps3"		attr="reboot_ps3"		src="#seg_reboot_ps3"/>
+			<Query class="type:x-xmb/folder-pixmap" key="psn_tools" 	 attr="psn_tools" 	   src="#seg_psn_tools" />	
+			<Query class="type:x-xmb/folder-pixmap" key="dump_tools"		attr="dump_tools"		src="#seg_dump_tools"/>
+			<Query class="type:x-xmb/folder-pixmap" key="recovery_menu"		attr="recovery_menu"	src="#seg_recovery_menu"/>
+			<Query class="type:x-xmb/folder-pixmap" key="ps3hen_maintenance"		attr="ps3hen_maintenance"		src="#seg_ps3hen_maintenance"/>
+			<Query class="type:x-xmb/folder-pixmap" key="int"		attr="int"		src="#seg_int"/>
+			<Query class="type:x-xmb/folder-pixmap" key="mode"	attr="mode"	src="#seg_mode"/>
+			<!--<<Query class="type:x-xmb/folder-pixmap" key="fan_settings"	 attr="fan_settings"   src="#seg_fan_settings" />/>--> 			
+			<Query class="type:x-xmb/folder-pixmap" key="ps3hen_update"		attr="ps3hen_update"	src="xmb://localhost/dev_flash/hen/xml/ps3hen_updater.xml#seg_ps3hen_updater"/>
+			<Query class="type:x-xmb/folder-pixmap"	key="update_toolbox_main" attr="update_toolbox_main" src="#update_toolbox_item"/>
+		</Items>
+	</View>
+		
+	<View id="update_toolbox_item">
+		<Attributes>
+			<Table key="update_toolbox_link">
+				<Pair key="info"><String>net_package_install</String></Pair>
+				<Pair key="pkg_src"><String>https://github.com/ErikPshat/pkgi/releases/latest/download/pkgi.gnpdrm.pkg</String></Pair>
+				<Pair key="pkg_src_qa"><String>https://github.com/ErikPshat/pkgi/releases/latest/download/pkgi.gnpdrm.pkg</String></Pair>
+				<Pair key="content_name"><String>msg_install</String></Pair>
+				<Pair key="content_id"><String>UP0001-NP00PKGI3_00-0000000000000000</String></Pair>
+				<Pair key="prod_pict_path"><String>/dev_flash/vsh/resource/explore/icon/NP00PKGI3.png</String></Pair>
+ 			</Table> 
+		</Attributes> 
+			<Items>
+			<Item class="type:x-xmb/xmlnpsignup" key="update_toolbox_link" attr="update_toolbox_link"/>
+		</Items> 
+	</View>
+
+	<!-- Power Option Menu -->
+	<View id="seg_reboot_ps3">
+		<Attributes>
+			<Table key="shared_actions">
+				<Pair key="str_noitem"><String>msg_error_no_title</String></Pair>				
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="ingame"><String>disable</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>			
+			<Table key="soft_reboot_action" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_restart</String></Pair>
+				<Pair key="title_rsc"><String>msg_soft_reboot_action_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_soft_reboot_action_info</String></Pair>				
+				<Pair key="module_action"><String>soft_reboot_action</String></Pair>				
+			</Table>
+			<Table key="hard_reboot_action" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_restart</String></Pair>
+				<Pair key="title_rsc"><String>msg_hard_reboot_action_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_hard_reboot_action_info</String></Pair>				
+				<Pair key="module_action"><String>hard_reboot_action</String></Pair>				
+			</Table>
+			<Table key="lv2_reboot_action" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_restart</String></Pair>
+				<Pair key="title_rsc"><String>msg_lv2_reboot_action_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_lv2_reboot_action_info</String></Pair>
+				<Pair key="module_action"><String>lv2_reboot_action</String></Pair>	
+			</Table>
+			<Table key="shutdown_action">
+				<Pair key="icon_rsc"><String>tex_shutdown</String></Pair>
+				<Pair key="title_rsc"><String>msg_shutdown_action_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_shutdown_action_info</String></Pair>
+				<Pair key="module_name"><String>poweroff_plugin</String></Pair>
+				<Pair key="module_action"><String></String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>	
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action" key="soft_reboot_action"	attr="soft_reboot_action" />	
+			<Item class="type:x-xmb/module-action" key="hard_reboot_action"	attr="hard_reboot_action" />	
+			<Item class="type:x-xmb/module-action" key="lv2_reboot_action"	attr="lv2_reboot_action" />		
+			<Item class="type:x-xmb/module-action" key="shutdown_action"	attr="shutdown_action" />
+		</Items>		
+	</View>	
+
+	<View id="seg_ps3hen_theme">
+		<Items>		  
+			<Query class="type:x-xmb/xmlpackagefolder" key="theme_switch" src="host://localhost/q?path=/dev_hdd0/hen/themes&suffix=.pkg&subclass=x-host/package"/>
+		</Items>
+	</View>	
+	
+	<!-- PSN Tools -->
+	<View id="seg_psn_tools">
+		<Attributes>
+			<Table key="shared_actions">
+				<Pair key="str_noitem"><String>msg_error_no_title</String></Pair>				
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="disable_syscalls" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_fs</String></Pair>
+				<Pair key="title_rsc"><String>msg_disable_syscalls_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_disable_syscalls_info</String></Pair>
+				<Pair key="module_action"><String>disable_syscalls</String></Pair>
+			</Table>
+			<Table key="spoof_targetid" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_fs</String></Pair>
+				<Pair key="title_rsc"><String>msg_spoof_with_eid5_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_spoof_with_eid5_info</String></Pair>
+				<Pair key="module_action"><String>spoof_targetid</String></Pair>
+			</Table>
+			<Table key="spoof_idps" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_fs</String></Pair>
+				<Pair key="title_rsc"><String>msg_spoof_idps_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_spoof_idps_info</String></Pair>				
+				<Pair key="module_action"><String>spoof_idps</String></Pair>				
+			</Table>
+			<Table key="spoof_psid" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_fs</String></Pair>
+				<Pair key="title_rsc"><String>msg_spoof_psid_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_spoof_psid_info</String></Pair>
+				<Pair key="module_action"><String>spoof_psid</String></Pair>				
+			</Table>
+			<Table key="show_accountid" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_check_accountid</String></Pair>
+				<Pair key="title_rsc"><String>msg_show_accountid_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_show_accountid_info</String></Pair>
+				<Pair key="module_action"><String>show_accountid</String></Pair>				
+			</Table>
+			<Table key="patch_accountid" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_patch_accountid</String></Pair>
+				<Pair key="title_rsc"><String>msg_patch_accountid_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_patch_accountid_info</String></Pair>				
+				<Pair key="module_action"><String>set_accountid</String></Pair>				
+			</Table>
+			<Table key="patch_accountid_overwrite">
+				<Pair key="icon_rsc"><String>tex_patch_accountid</String></Pair>
+				<Pair key="title_rsc"><String>msg_patch_accountid_overwrite_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_patch_accountid_overwrite_info</String></Pair>
+			</Table>
+			<Table key="patch_accountid_empty">
+				<Pair key="icon_rsc"><String>tex_patch_accountid</String></Pair>
+				<Pair key="title_rsc"><String>msg_patch_accountid_remove_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_patch_accountid_remove_info</String></Pair>
+			</Table>
+			<Table key="activate_account" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_backup_license</String></Pair>
+				<Pair key="title_rsc"><String>msg_activate_account_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_activate_account_info</String></Pair>				
+				<Pair key="module_action"><String>activate_account</String></Pair>				
+			</Table>
+			<Table key="backup_license" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_backup_license</String></Pair>
+				<Pair key="title_rsc"><String>msg_backup_license_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_backup_license_info</String></Pair>
+				<Pair key="module_action"><String>backup_license</String></Pair>				
+			</Table>
+			<Table key="remove_license">
+				<Pair key="icon_rsc"><String>tex_delete_license</String></Pair>
+				<Pair key="title_rsc"><String>msg_remove_license_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_remove_license_info</String></Pair>
+			</Table>
+			<Table key="patch_savedata" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_convert_save</String></Pair>
+				<Pair key="title_rsc"><String>msg_patch_savedata_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_patch_savedata_info</String></Pair>				
+				<Pair key="module_action"><String>patch_savedata</String></Pair>				
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action"	key="disable_syscalls" 			attr="disable_syscalls" />
+			<Item class="type:x-xmb/module-action"	key="show_accountid" 			attr="show_accountid" />
+			<Item class="type:x-xmb/module-action" 	key="patch_accountid" 			attr="patch_accountid" />			
+			<Item class="type:x-xmb/module-action" 	key="activate_account" 			attr="activate_account" />
+			<Item class="type:x-xmb/module-action" 	key="patch_savedata" 			attr="patch_savedata" />
+			<Item class="type:x-xmb/module-action" 	key="backup_license" 			attr="backup_license" />
+			<Query class="type:x-xmb/folder-pixmap" key="patch_accountid_overwrite" attr="patch_accountid_overwrite" src="#seg_confirm_accountid_overwrite" />
+			<Query class="type:x-xmb/folder-pixmap" key="patch_accountid_empty" 	attr="patch_accountid_empty" 	 src="#seg_confirm_accountid_empty" />
+			<Query class="type:x-xmb/folder-pixmap" key="remove_license" 			attr="remove_license" 			 src="#seg_confirm_delete_license" />
+			<Item class="type:x-xmb/module-action"	key="spoof_targetid" 			attr="spoof_targetid" />			
+			<Item class="type:x-xmb/module-action"	key="spoof_idps" 				attr="spoof_idps" />			
+			<Item class="type:x-xmb/module-action"	key="spoof_psid" 				attr="spoof_psid" />
+		</Items>
+	</View>
+
+	<!-- FAN Tools -->
+	<View id="seg_fan_settings">
+		<Attributes>
+			<Table key="shared_actions">
+				<Pair key="str_noitem"><String>msg_error_no_title</String></Pair>				
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="dynamic_fan_settings">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_dynamic_title</String></Pair>
+			</Table>
+			<Table key="manual_fan_settings">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_manual_title</String></Pair>
+			</Table>
+			<Table key="fan_ps2_settings">
+				<Pair key="icon_rsc"><String>tex_fan_ps2</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_ps2_settings_title</String></Pair>
+			</Table>
+			<Table key="fan_mode_disabled" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_mode_disabled_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_mode_disabled_info</String></Pair>				
+				<Pair key="module_action"><String>fan_mode_disabled</String></Pair>				
+			</Table>
+			<Table key="fan_mode_syscon" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_mode_syscon_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_mode_syscon_info</String></Pair>
+				<Pair key="module_action"><String>fan_mode_syscon</String></Pair>				
+			</Table>			
+			<Table key="fan_mode_max" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_mode_max_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_mode_max_info</String></Pair>
+				<Pair key="module_action"><String>fan_mode_max</String></Pair>				
+			</Table>			
+		</Attributes>
+		<Items>							
+			<Query class="type:x-xmb/folder-pixmap" key="dynamic_fan_settings" attr="dynamic_fan_settings" src="#seg_dynamic_fan_settings" />
+			<Query class="type:x-xmb/folder-pixmap" key="manual_fan_settings"  attr="manual_fan_settings"  src="#seg_manual_fan_settings" />
+			<Query class="type:x-xmb/folder-pixmap" key="fan_ps2_settings"	   attr="fan_ps2_settings"	   src="#seg_fan_ps2_settings" />
+			<Item class="type:x-xmb/module-action" 	key="fan_mode_disabled"    attr="fan_mode_disabled" />			
+			<Item class="type:x-xmb/module-action" 	key="fan_mode_syscon"	   attr="fan_mode_syscon" />			
+			<Item class="type:x-xmb/module-action" 	key="fan_mode_max"	  	   attr="fan_mode_max" />
+		</Items>
+	</View>
+
+	<View id="seg_manual_fan_settings">
+		<Attributes>
+			<Table key="fan_mode_manual_40">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_manual_40_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_manual_40_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_manual_40</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_mode_manual_45">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_manual_45_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_manual_45_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_manual_45</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_mode_manual_50">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_manual_50_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_manual_50_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_manual_50</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>		
+			<Table key="fan_mode_manual_55">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_manual_55_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_manual_55_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_manual_55</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>	
+			<Table key="fan_mode_manual_60">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_manual_60_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_manual_60_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_manual_60</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_mode_manual_65">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_manual_65_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_manual_65_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_manual_65</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_mode_manual_70">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_manual_70_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_manual_70_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_manual_70</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_mode_manual_75">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_manual_75_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_manual_75_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_manual_75</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_mode_manual_80">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_manual_80_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_manual_80_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_manual_80</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_mode_manual_85">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_manual_85_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_manual_85_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_manual_85</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_mode_manual_90">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_manual_90_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_manual_90_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_manual_90</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_mode_manual_95">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_manual_95_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_manual_95_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_manual_95</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>							
+			<Item class="type:x-xmb/module-action" key="fan_mode_manual_40" attr="fan_mode_manual_40" />
+			<Item class="type:x-xmb/module-action" key="fan_mode_manual_45" attr="fan_mode_manual_45" />
+			<Item class="type:x-xmb/module-action" key="fan_mode_manual_50" attr="fan_mode_manual_50" />
+			<Item class="type:x-xmb/module-action" key="fan_mode_manual_55" attr="fan_mode_manual_55" />
+			<Item class="type:x-xmb/module-action" key="fan_mode_manual_60" attr="fan_mode_manual_60" />
+			<Item class="type:x-xmb/module-action" key="fan_mode_manual_65" attr="fan_mode_manual_65" />
+			<Item class="type:x-xmb/module-action" key="fan_mode_manual_70" attr="fan_mode_manual_70" />
+			<Item class="type:x-xmb/module-action" key="fan_mode_manual_75" attr="fan_mode_manual_75" />
+			<Item class="type:x-xmb/module-action" key="fan_mode_manual_80" attr="fan_mode_manual_80" />
+			<Item class="type:x-xmb/module-action" key="fan_mode_manual_85" attr="fan_mode_manual_85" />
+			<Item class="type:x-xmb/module-action" key="fan_mode_manual_90" attr="fan_mode_manual_90" />
+			<Item class="type:x-xmb/module-action" key="fan_mode_manual_95" attr="fan_mode_manual_95" />
+		</Items>
+	</View>
+
+	<View id="seg_dynamic_fan_settings">
+		<Attributes>
+			<Table key="fan_mode_payload_60">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_mode_60_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_mode_60_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_mode_60</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_mode_payload_65">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_mode_65_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_mode_65_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_mode_65</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_mode_payload_70">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_mode_70_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_mode_70_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_mode_70</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>		
+			<Table key="fan_mode_payload_75">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_mode_75_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_mode_75_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_mode_75</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>	
+		</Attributes>
+		<Items>							
+			<Item class="type:x-xmb/module-action" key="fan_mode_payload_60" attr="fan_mode_payload_60" />
+			<Item class="type:x-xmb/module-action" key="fan_mode_payload_65" attr="fan_mode_payload_65" />
+			<Item class="type:x-xmb/module-action" key="fan_mode_payload_70" attr="fan_mode_payload_70" />
+			<Item class="type:x-xmb/module-action" key="fan_mode_payload_75" attr="fan_mode_payload_75" />
+		</Items>
+	</View>
+
+	<View id="seg_fan_ps2_settings">
+		<Attributes>
+			<Table key="fan_ps2mode_disabled">
+				<Pair key="icon_rsc"><String>tex_fan_ps2</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_ps2mode_disabled_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_ps2mode_disabled_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_ps2mode_disabled</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_ps2mode_syscon">
+				<Pair key="icon_rsc"><String>tex_fan_ps2</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_ps2mode_syscon_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_ps2mode_syscon_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_ps2mode_syscon</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_ps2mode_40">
+				<Pair key="icon_rsc"><String>tex_fan_ps2</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_ps2mode_40_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_ps2mode_40_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_ps2mode_40</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_ps2mode_50">
+				<Pair key="icon_rsc"><String>tex_fan_ps2</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_ps2mode_50_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_ps2mode_50_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_ps2mode_50</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_ps2mode_60">
+				<Pair key="icon_rsc"><String>tex_fan_ps2</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_ps2mode_60_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_ps2mode_60_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_ps2mode_60</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_ps2mode_70">
+				<Pair key="icon_rsc"><String>tex_fan_ps2</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_ps2mode_70_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_ps2mode_70_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_ps2mode_70</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_ps2mode_80">
+				<Pair key="icon_rsc"><String>tex_fan_ps2</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_ps2mode_80_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_ps2mode_80_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_ps2mode_80</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="fan_ps2mode_90">
+				<Pair key="icon_rsc"><String>tex_fan_ps2</String></Pair>
+				<Pair key="title_rsc"><String>msg_fan_ps2mode_90_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_ps2mode_90_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fan_ps2mode_90</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>			
+		</Attributes>
+		<Items>							
+			<Item class="type:x-xmb/module-action" key="fan_ps2mode_disabled" attr="fan_ps2mode_disabled" />
+			<Item class="type:x-xmb/module-action" key="fan_ps2mode_syscon"	  attr="fan_ps2mode_syscon" />
+			<Item class="type:x-xmb/module-action" key="fan_ps2mode_40"	  	  attr="fan_ps2mode_40" />
+			<Item class="type:x-xmb/module-action" key="fan_ps2mode_50"	  	  attr="fan_ps2mode_50" />
+			<Item class="type:x-xmb/module-action" key="fan_ps2mode_60" 	  attr="fan_ps2mode_60" />			
+			<Item class="type:x-xmb/module-action" key="fan_ps2mode_70"		  attr="fan_ps2mode_70" />
+			<Item class="type:x-xmb/module-action" key="fan_ps2mode_80"		  attr="fan_ps2mode_80" />
+			<Item class="type:x-xmb/module-action" key="fan_ps2mode_90"	  	  attr="fan_ps2mode_90" />
+		</Items>
+	</View>
+	
+	<View id="seg_mode">
+		<Attributes>
+			<Table key="shared_actions">
+				<Pair key="str_noitem"><String>msg_error_no_title</String></Pair>				
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="rel" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/mode/release/hen_enable.png</String></Pair>						
+				<Pair key="title"><String>Release Mode</String></Pair>				
+				<Pair key="module_action"><String>hen_mode_release</String></Pair>
+			</Table>
+			<Table key="deb" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/mode/debug/hen_enable.png</String></Pair>						
+				<Pair key="title"><String>Debug Mode</String></Pair>				
+				<Pair key="module_action"><String>hen_mode_debug</String></Pair>
+			</Table>
+			<Table key="usb0" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/mode/usb/hen_enable.png</String></Pair>						
+				<Pair key="title"><String>USB000 Mode</String></Pair>				
+				<Pair key="module_action"><String>hen_mode_usb_000</String></Pair>
+			</Table>
+			<Table key="usb1" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/mode/usb/hen_enable.png</String></Pair>						
+				<Pair key="title"><String>USB001 Mode</String></Pair>				
+				<Pair key="module_action"><String>hen_mode_usb_001</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action" key="rel" attr="rel"/>
+			<Item class="type:x-xmb/module-action" key="deb" attr="deb"/>
+			<!--<Item class="type:x-xmb/module-action" key="usb0" attr="usb0"/>
+			<Item class="type:x-xmb/module-action" key="usb1" attr="usb1"/-->
+		</Items>
+	</View>
+
+	<!-- Dump Tools -->
+	<View id="seg_dump_tools">
+		<Attributes>
+			<Table key="shared_actions">
+				<Pair key="str_noitem"><String>msg_error_no_title</String></Pair>				
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="cobra_info" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_cfw_info</String></Pair>
+				<Pair key="title_rsc"><String>msg_cobra_data_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_cobra_data_info</String></Pair>
+				<Pair key="module_action"><String>cobra_info</String></Pair>				
+			</Table>
+			<Table key="ps3_lifetime" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_time</String></Pair> 
+				<Pair key="title_rsc"><String>msg_ps3_lifetime_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_ps3_lifetime_info</String></Pair>				
+				<Pair key="module_action"><String>ps3_lifetime</String></Pair>				
+			</Table>
+			<Table key="fan_speed" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_fan</String></Pair> 
+				<Pair key="title_rsc"><String>msg_fan_speed_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_fan_speed_info</String></Pair>				
+				<Pair key="module_action"><String>fan_speed</String></Pair>				
+			</Table>
+			<Table key="show_temp_celsius" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_temp</String></Pair>
+				<Pair key="title_rsc"><String>msg_show_temp_celsius_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_show_temp_celsius_info</String></Pair>
+				<Pair key="module_action"><String>show_temp</String></Pair>
+			</Table>		
+			<Table key="show_idps" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_show_id</String></Pair>
+				<Pair key="title_rsc"><String>msg_show_idps_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_show_idps_info</String></Pair>
+				<Pair key="module_action"><String>show_idps</String></Pair>				
+			</Table>
+			<Table key="show_psid" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_show_id</String></Pair>
+				<Pair key="title_rsc"><String>msg_show_psid_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_show_psid_info</String></Pair>
+				<Pair key="module_action"><String>show_psid</String></Pair>				
+			</Table>
+			<Table key="show_ip" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_show_id</String></Pair>
+				<Pair key="title_rsc"><String>msg_show_ip_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_show_ip_info</String></Pair>				
+				<Pair key="module_action"><String>show_ip</String></Pair>				
+			</Table>
+			<Table key="view_log">
+				<Pair key="icon_rsc"><String>tex_log</String></Pair>
+				<Pair key="title_rsc"><String>msg_view_log_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_view_log_info</String></Pair>
+				<Pair key="module_name"><String>webrender_plugin</String></Pair>
+				<Pair key="module_action"><String>http://localhost/dev_hdd0/tmp/cfw_settings.log</String></Pair>
+			</Table>
+			<Table key="view_log_hfw">
+				<Pair key="icon_rsc"><String>tex_log</String></Pair>
+				<Pair key="title_rsc"><String>msg_hfw_view_log</String></Pair>
+				<Pair key="info_rsc"><String>msg_hfw_view_log_info</String></Pair>
+				<Pair key="module_name"><String>webrender_plugin</String></Pair>
+				<Pair key="module_action"><String>http://localhost/dev_hdd0/tmp/hfw_settings.log</String></Pair>
+			</Table>			
+			<Table key="clean_log" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_delete_log</String></Pair>
+				<Pair key="title_rsc"><String>msg_clean_log_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_clean_log_info</String></Pair>
+				<Pair key="module_action"><String>clean_log</String></Pair>				
+			</Table>
+			<Table key="dump_idps" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_dump_id</String></Pair>
+				<Pair key="title_rsc"><String>msg_dump_idps_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_dump_idps_info</String></Pair>				
+				<Pair key="module_action"><String>dump_idps</String></Pair>				
+			</Table>
+			<Table key="dump_psid" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_dump_id</String></Pair>
+				<Pair key="title_rsc"><String>msg_dump_psid_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_dump_psid_info</String></Pair>				
+				<Pair key="module_action"><String>dump_psid</String></Pair>				
+			</Table>
+			<Table key="dump_lv2" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_dump_id</String></Pair>
+				<Pair key="title_rsc"><String>msg_dump_lv2_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_dump_lv2_info</String></Pair>				
+				<Pair key="module_action"><String>dump_lv2</String></Pair>
+			</Table>
+			<Table key="dump_lv1" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_dump_id</String></Pair>
+				<Pair key="title_rsc"><String>msg_dump_lv1_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_dump_lv1_info</String></Pair>
+				<Pair key="module_action"><String>dump_lv1</String></Pair>				
+			</Table>
+			<Table key="dump_flash" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_dump_id</String></Pair>
+				<Pair key="title_rsc"><String>msg_dump_flash_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_dump_flash_info</String></Pair>				
+				<Pair key="module_action"><String>dump_flash</String></Pair>				
+			</Table>
+			<Table key="dump_ram" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_dump_id</String></Pair>
+				<Pair key="title_rsc"><String>msg_dump_ram_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_dump_ram_info</String></Pair>				
+				<Pair key="module_action"><String>dump_ram</String></Pair>				
+			</Table>
+			<Table key="dump_sysrom" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_dump_id</String></Pair>
+				<Pair key="title_rsc"><String>msg_dump_sysrom_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_dump_sysrom_info</String></Pair>				
+				<Pair key="module_action"><String>dump_sysrom</String></Pair>				
+			</Table>
+			<Table key="dump_eeprom" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_dump_id</String></Pair>
+				<Pair key="title_rsc"><String>msg_dump_eeprom_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_dump_eeprom_info</String></Pair>				
+				<Pair key="module_action"><String>dump_eeprom</String></Pair>				
+			</Table>
+			<Table key="dump_syscon_log" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_dump_id</String></Pair>
+				<Pair key="title_rsc"><String>msg_dump_syscon_error_log_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_dump_syscon_error_log_info</String></Pair>				
+				<Pair key="module_action"><String>dump_syscon_log</String></Pair>
+			</Table>
+			<Table key="log_klic" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_backup_license</String></Pair>
+				<Pair key="title_rsc"><String>msg_log_klic_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_log_klic_info</String></Pair>				
+				<Pair key="module_action"><String>log_klic</String></Pair>				
+			</Table>
+			<Table key="log_secureid" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_backup_license</String></Pair>
+				<Pair key="title_rsc"><String>msg_log_secureid_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_log_secureid_info</String></Pair>	
+				<Pair key="module_action"><String>log_secureid</String></Pair>				
+			</Table>
+			<Table key="dump_disc_key" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_disc</String></Pair>
+				<Pair key="title_rsc"><String>msg_dump_disc_key_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_dump_disc_key_info</String></Pair>
+				<Pair key="module_action"><String>dump_disc_key</String></Pair>				
+		</Table>		
+			
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action"  key="cobra_info" 	     	attr="cobra_info" />
+			<Item class="type:x-xmb/module-action"  key="ps3_lifetime" 		 	attr="ps3_lifetime" />				
+			<Item class="type:x-xmb/module-action"  key="fan_speed" 		 	attr="fan_speed" />	
+			<Item class="type:x-xmb/module-action"  key="show_temp_celsius"	 	attr="show_temp_celsius" />	
+			<Item class="type:x-xmb/module-action"  key="show_idps"			 	attr="show_idps" />		
+			<Item class="type:x-xmb/module-action"  key="show_psid"			 	attr="show_psid" />	
+			<Item class="type:x-xmb/module-action"  key="show_ip"			 	attr="show_ip" />
+			<Item class="type:x-xmb/module-action" key="view_log"	      attr="view_log" />
+			<Item class="type:x-xmb/module-action" key="view_log_hfw"	      attr="view_log_hfw" />
+			<Item class="type:x-xmb/module-action" key="clean_log"	      attr="clean_log" />
+			<Item class="type:x-xmb/module-action" key="dump_idps"	      attr="dump_idps" />
+			<Item class="type:x-xmb/module-action" key="dump_psid"	      attr="dump_psid" />				
+			<Item class="type:x-xmb/module-action" key="dump_lv2"	      attr="dump_lv2" />
+			<Item class="type:x-xmb/module-action" key="dump_lv1"	      attr="dump_lv1" />
+			<Item class="type:x-xmb/module-action" key="dump_flash"	      attr="dump_flash" />
+			<Item class="type:x-xmb/module-action" key="dump_ram"	      attr="dump_ram" />
+			<Item class="type:x-xmb/module-action" key="dump_sysrom"      attr="dump_sysrom" />
+			<Item class="type:x-xmb/module-action" key="dump_eeprom"   	  attr="dump_eeprom" />			
+			<Item class="type:x-xmb/module-action" key="dump_syscon_log"  attr="dump_syscon_log" />			
+			<Item class="type:x-xmb/module-action" key="log_klic"         attr="log_klic" />
+			<Item class="type:x-xmb/module-action" key="log_secureid"     attr="log_secureid" />
+			<Item class="type:x-xmb/module-action" key="dump_disc_key"    attr="dump_disc_key" />
+		</Items>
+	</View>
+
+	<View id="seg_recovery_menu">
+		<Attributes>
+			<Table key="shared_actions">
+				<Pair key="str_noitem"><String>msg_error_no_title</String></Pair>				
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>			
+			<Table key="check_syscall8" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_cfw_info</String></Pair>
+				<Pair key="title_rsc"><String>msg_cobra_sc8_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_cobra_sc8_info</String></Pair>
+				<Pair key="module_action"><String>check_syscall8</String></Pair>				
+			</Table>		
+			<Table key="cobra_create_syscalls" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_fs</String></Pair>
+				<Pair key="title_rsc"><String>msg_create_syscalls_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_create_syscalls_info</String></Pair>				
+				<Pair key="module_action"><String>create_syscalls</String></Pair>				
+			</Table>
+			<Table key="disable_syscalls" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_fs</String></Pair>
+				<Pair key="title_rsc"><String>msg_disable_syscalls_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_disable_syscalls_info</String></Pair>				
+				<Pair key="module_action"><String>disable_syscalls</String></Pair>
+			</Table>
+			<Table key="enable_ftp" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_ftp</String></Pair>
+				<Pair key="title_rsc"><String>msg_ftp_enable_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_ftp_enable_info</String></Pair>
+				<Pair key="module_action"><String>enable_ftp</String></Pair>				
+			</Table>
+			<Table key="disable_ftp" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_ftp</String></Pair>
+				<Pair key="title_rsc"><String>msg_ftp_disable_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_ftp_disable_info</String></Pair>				
+				<Pair key="module_action"><String>disable_ftp</String></Pair>
+			</Table>
+			<!--<Table key="allow_restore_sc">
+				<Pair key="icon_rsc"><String>tex_cobra_syscalls</String></Pair>
+				<Pair key="title_rsc"><String>msg_allow_restore_sc_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_allow_restore_sc_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>allow_restore_sc</String></Pair>
+				<Pair key="ingame"><String>disable</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="skip_existing_rif">
+				<Pair key="icon_rsc"><String>tex_cobra_rif</String></Pair>
+				<Pair key="title_rsc"><String>msg_skip_rif_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_skip_rif_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>skip_existing_rif</String></Pair>
+				<Pair key="ingame"><String>disable</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>-->
+			<Table key="create_license" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_backup_license</String></Pair>
+				<Pair key="title_rsc"><String>msg_create_rif_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_create_rif_info</String></Pair>				
+				<Pair key="module_action"><String>create_rif_license</String></Pair>				
+			</Table>
+			<Table key="create_license_rap" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_backup_license</String></Pair>
+				<Pair key="title_rsc"><String>msg_create_rap_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_create_rap_info</String></Pair>				
+				<Pair key="module_action"><String>export_rap</String></Pair>				
+			</Table>
+			<Table key="toggle_plugins" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_toggle_cobra</String></Pair>
+				<Pair key="title_rsc"><String>msg_toggle_cobra_plugins_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_toggle_cobra_plugins_info</String></Pair>				
+				<Pair key="module_action"><String>toggle_plugins</String></Pair>
+				<Pair key="ingame"><String>disable</String></Pair>				
+			</Table>
+			<Table key="toggle_upd" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_toggle_cobra</String></Pair>
+				<Pair key="title_rsc"><String>msg_swap_upd_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_swap_upd_info</String></Pair>				
+				<Pair key="module_action"><String>toggle_update</String></Pair>
+				<Pair key="ingame"><String>disable</String></Pair>				
+			</Table>
+			<Table key="toggle_devblind" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_mount_flash</String></Pair>
+				<Pair key="title_rsc"><String>msg_mount_dev_blind_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_mount_dev_blind_info</String></Pair>				
+				<Pair key="module_action"><String>toggle_devblind</String></Pair>				
+			</Table>
+			<Table key="override_sfo">
+				<Pair key="icon_rsc"><String>game_tex_load</String></Pair>
+				<Pair key="title_rsc"><String>msg_hfw_override_sfo</String></Pair>
+				<Pair key="info_rsc"><String>msg_hfw_override_sfo_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>override_sfo</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>			
+			<Table key="xreg_settings">
+				<Pair key="icon"><String>/dev_flash/vsh/resource/explore/icon/dump_backup_xregistry.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_xreg_settings_title</String></Pair>
+			</Table>
+			<Table key="toggle_coldboot" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_toggle_coldboot</String></Pair>
+				<Pair key="title_rsc"><String>msg_toggle_coldboot_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_toggle_coldboot_info</String></Pair>				
+				<Pair key="module_action"><String>toggle_coldboot</String></Pair>				
+			</Table>			
+			<Table key="applicable_version" include="shared_actions">
+				<Pair key="icon"><String>/dev_flash/vsh/resource/explore/icon/recovery_display_minver.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hfw_applicable_version</String></Pair>
+				<Pair key="info_rsc"><String>msg_hfw_applicable_version_info</String></Pair>				
+				<Pair key="module_action"><String>applicable_version</String></Pair>
+				<Pair key="ingame"><String>disable</String></Pair>				
+			</Table>
+			<Table key="fs_check" include="shared_actions">
+				<Pair key="icon"><String>/dev_flash/vsh/resource/explore/icon/recovery_check_file_system.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hfw_fs_check</String></Pair>
+				<Pair key="info_rsc"><String>msg_hfw_fs_check_info</String></Pair>				
+				<Pair key="module_action"><String>fs_check</String></Pair>
+				<Pair key="ingame"><String>disable</String></Pair>				
+			</Table>
+			<Table key="rebuild_db" include="shared_actions">
+				<Pair key="icon"><String>/dev_flash/vsh/resource/explore/icon/recovery_rebuild_db.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hfw_rebuild_db</String></Pair>
+				<Pair key="info_rsc"><String>msg_hfw_rebuild_db_info</String></Pair>				
+				<Pair key="module_action"><String>rebuild_db</String></Pair>
+				<Pair key="ingame"><String>disable</String></Pair>				
+			</Table>
+			<Table key="recovery_mode" include="shared_actions">
+				<Pair key="icon"><String>/dev_flash/vsh/resource/explore/icon/recovery_toggle.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hfw_recovery_mode</String></Pair>
+				<Pair key="info_rsc"><String>msg_hfw_recovery_mode_info</String></Pair>				
+				<Pair key="module_action"><String>recovery_mode</String></Pair>
+				<Pair key="ingame"><String>disable</String></Pair>				
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action"  key="check_syscall8" 	    attr="check_syscall8" />			
+			<Item class="type:x-xmb/module-action"  key="cobra_create_syscalls"	attr="cobra_create_syscalls" />
+			<Item class="type:x-xmb/module-action"	key="disable_syscalls" 		attr="disable_syscalls" />
+			<Item class="type:x-xmb/module-action"  key="enable_ftp"	 		attr="enable_ftp" />
+			<Item class="type:x-xmb/module-action"  key="disable_ftp"			attr="disable_ftp" />
+			<Item class="type:x-xmb/module-action" 	key="toggle_devblind" 		attr="toggle_devblind" />				
+			<!--<Item class="type:x-xmb/module-action"  key="allow_restore_sc"	    attr="allow_restore_sc" />			
+			<Item class="type:x-xmb/module-action"  key="skip_existing_rif"	 	attr="skip_existing_rif" />-->	
+			<Item class="type:x-xmb/module-action" 	key="create_license" 		attr="create_license" />	
+			<Item class="type:x-xmb/module-action" 	key="create_license_rap" 	attr="create_license_rap" />
+			<Item class="type:x-xmb/module-action"  key="toggle_plugins"	 	attr="toggle_plugins" />			
+			<Item class="type:x-xmb/module-action"  key="toggle_upd"	 		attr="toggle_upd" />
+			<Item class="type:x-xmb/module-action" key="override_sfo"			attr="override_sfo"/>
+			<Query class="type:x-xmb/folder-pixmap" key="xreg_settings"		 	attr="xreg_settings"     src="#seg_xreg_settings" />
+			<Item class="type:x-xmb/module-action"  key="toggle_coldboot"	 	attr="toggle_coldboot" />			
+			<Item class="type:x-xmb/module-action"  key="applicable_version"	attr="applicable_version"/>
+			<Item class="type:x-xmb/module-action"  key="fs_check"				attr="fs_check"/>
+			<Item class="type:x-xmb/module-action"  key="rebuild_db"			attr="rebuild_db"/>
+			<Item class="type:x-xmb/module-action"  key="recovery_mode"			attr="recovery_mode"/>
+		</Items>
+	</View>
+	
+	<!-- xRegistry Tools -->
+	<View id="seg_xreg_settings">
+		<Attributes>
+			<Table key="shared_actions">
+				<Pair key="str_noitem"><String>msg_error_no_title</String></Pair>				
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>						
+			<Table key="backup_registry" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_backup_xreg</String></Pair>
+				<Pair key="title_rsc"><String>msg_backup_registry_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_backup_registry_info</String></Pair>				
+				<Pair key="module_action"><String>backup_registry</String></Pair>				
+			</Table>
+			<Table key="button_assignment" include="shared_actions">
+				<Pair key="icon_rsc"><String>tex_button_assignment</String></Pair>
+				<Pair key="title_rsc"><String>msg_button_assignment_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_button_assignment_info</String></Pair>				
+				<Pair key="module_action"><String>button_assignment</String></Pair>				
+			</Table>					
+		</Attributes>
+		<Items>		
+			<Item class="type:x-xmb/module-action" key="backup_registry"   attr="backup_registry" />				
+			<Item class="type:x-xmb/module-action" key="button_assignment" attr="button_assignment" />
+		</Items>
+	</View>
+	
+	<View id="seg_ps3hen_maintenance">
+		<Attributes>
+			<Table key="shared_actions">
+				<Pair key="str_noitem"><String>msg_error_no_title</String></Pair>				
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="ingame"><String>disable</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>									
+			<Table key="toggle_auto_update" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/auto_update.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hfw_auto_update</String></Pair>
+				<Pair key="info_rsc"><String>msg_hfw_auto_update_info</String></Pair>				
+				<Pair key="module_action"><String>toggle_auto_update</String></Pair>				
+			</Table>			
+			<Table key="hen_audio_on" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/audio.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_audio</String></Pair>
+				<Pair key="info_rsc"><String>msg_hen_xmb_info</String></Pair>				
+				<Pair key="module_action"><String>toggle_audio</String></Pair>				
+			</Table>
+			<Table key="hen_cwh" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/clear_web_history.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_cwh</String></Pair>
+				<Pair key="info_rsc"><String>msg_hen_xmb_info</String></Pair>				
+				<Pair key="module_action"><String>toggle_hen_clear_web_history</String></Pair>				
+			</Table>
+			<Table key="hen_cwa" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/clear_web_auth_cache.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_cwa</String></Pair>
+				<Pair key="info_rsc"><String>msg_hen_xmb_info</String></Pair>				
+				<Pair key="module_action"><String>toggle_hen_clear_web_auth_cache</String></Pair>				
+			</Table>
+			<Table key="hen_cwc" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/clear_web_cookie.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_cwc</String></Pair>
+				<Pair key="info_rsc"><String>msg_hen_xmb_info</String></Pair>				
+				<Pair key="module_action"><String>toggle_hen_clear_web_cookie</String></Pair>				
+			</Table>
+			<Table key="hen_clog" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/clear_info.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_clog</String></Pair>
+				<Pair key="info_rsc"><String>msg_hen_xmb_info</String></Pair>				
+				<Pair key="module_action"><String>toggle_hen_clear_info</String></Pair>
+			</Table>
+			<Table key="hen_keys" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/hotkeys.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_keys</String></Pair>
+				<Pair key="info_rsc"><String>msg_hen_xmb_info</String></Pair>				
+				<Pair key="module_action"><String>toggle_hen_hotkeys</String></Pair>				
+			</Table>
+			<Table key="hen_trophy" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/trophy.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_trophy</String></Pair>
+				<Pair key="info_rsc"><String>msg_hen_xmb_reload</String></Pair>				
+				<Pair key="module_action"><String>toggle_hen_trophy</String></Pair>				
+			</Table>
+			<Table key="hen_gameboot" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/gameboot.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_toggle_gameboot_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_toggle_gameboot_info</String></Pair>				
+				<Pair key="module_action"><String>toggle_hen_gameboot</String></Pair>				
+			</Table>
+			<Table key="uninstall_hen" include="shared_actions">
+				<Pair key="icon"><String>/dev_flash/vsh/resource/explore/icon/uninstall_hen.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hfw_uninstall_hen</String></Pair>
+				<Pair key="info_rsc"><String>msg_hfw_uninstall_hen_info</String></Pair>				
+				<Pair key="module_action"><String>uninstall_hen</String></Pair>				
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action" key="toggle_auto_update"	attr="toggle_auto_update"/>
+			<Item class="type:x-xmb/module-action" key="hen_audio_on" attr="hen_audio_on"/>
+			<Item class="type:x-xmb/module-action" key="hen_cwh" attr="hen_cwh"/>
+			<Item class="type:x-xmb/module-action" key="hen_cwa" attr="hen_cwa"/>
+			<Item class="type:x-xmb/module-action" key="hen_cwc" attr="hen_cwc"/>
+			<Item class="type:x-xmb/module-action" key="hen_clog" attr="hen_clog"/>			
+			<Item class="type:x-xmb/module-action" key="hen_keys" attr="hen_keys"/>
+			<Item class="type:x-xmb/module-action" key="hen_trophy" attr="hen_trophy"/>
+			<!--<Item class="type:x-xmb/module-action" key="hen_gameboot" attr="hen_gameboot"/>-->
+			<Item class="type:x-xmb/module-action" key="uninstall_hen"	attr="uninstall_hen"/>
+		</Items>
+	</View>
+	
+	 <View id="seg_int">
+		<Attributes>
+			<Table key="shared_actions">
+				<Pair key="str_noitem"><String>msg_error_no_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_hen_xmb_info</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="ingame"><String>disable</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="hen_off" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/hen_xmb.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_xmb</String></Pair>
+				<Pair key="module_action"><String>toggle_hen_xmb</String></Pair>
+			</Table>
+			<Table key="hen_pm" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/hen_pm.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_pm</String></Pair>
+				<Pair key="module_action"><String>toggle_hen_pm</String></Pair>
+			</Table>
+			<Table key="hen_ofw" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/hen_ofw.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_ofw</String></Pair>
+				<Pair key="module_action"><String>toggle_hen_ofw</String></Pair>
+			</Table>
+			<Table key="hen_mag" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/hen_mag.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_mag</String></Pair>
+				<Pair key="info_rsc"><String>msg_hen_mag_info</String></Pair>
+				<Pair key="module_action"><String>toggle_hen_mag</String></Pair>
+			</Table>
+			<Table key="hen_app" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/hen_apphome.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_app</String></Pair>
+				<Pair key="module_action"><String>toggle_hen_apphome</String></Pair>
+			</Table>
+			<Table key="hen_gall" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/hen_gall.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_gall</String></Pair>
+				<Pair key="module_action"><String>toggle_hen_gall</String></Pair>
+			</Table>
+			<Table key="hen_gps3" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/hen_gps3.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_gps3</String></Pair>
+				<Pair key="module_action"><String>toggle_hen_gps3</String></Pair>
+			</Table>
+			<Table key="hen_gps2" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/hen_gps2.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_gps2</String></Pair>
+				<Pair key="module_action"><String>toggle_hen_gps2</String></Pair>
+			</Table>
+			<Table key="hen_gps1" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/hen_gps1.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_gps1</String></Pair>
+				<Pair key="module_action"><String>toggle_hen_gps1</String></Pair>
+			</Table>
+			<Table key="hen_gpsp" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/hen_gpsp.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_gpsp</String></Pair>
+				<Pair key="module_action"><String>toggle_hen_gpsp</String></Pair>
+			</Table>
+			<Table key="hen_gpsn" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/hen_gpsn.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_gpsn</String></Pair>
+				<Pair key="module_action"><String>toggle_hen_gpsn</String></Pair>
+			</Table>
+			<Table key="hen_ghb" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/hen_ghb.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_ghb</String></Pair>
+				<Pair key="module_action"><String>toggle_hen_ghb</String></Pair>
+			</Table>
+			<Table key="hen_grg" include="shared_actions">
+				<Pair key="icon"><String>/dev_hdd0/hen/hen_grg.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_hen_grg</String></Pair>
+				<Pair key="module_action"><String>toggle_hen_grg</String></Pair>
+			</Table>
+			<Table key="old_int">
+				<Pair key="icon"><String>/dev_flash/vsh/resource/explore/icon/uninstall_hen.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_int_old</String></Pair>
+				<Pair key="info_rsc"><String>msg_int_old_info</String></Pair>
+ 			</Table>			
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action" key="hen_off" attr="hen_off"/>
+			<Item class="type:x-xmb/module-action" key="hen_pm" attr="hen_pm"/>
+			<Item class="type:x-xmb/module-action" key="hen_ofw" attr="hen_ofw"/>
+			<Item class="type:x-xmb/module-action" key="hen_mag" attr="hen_mag"/>
+			<Item class="type:x-xmb/module-action" key="hen_app" attr="hen_app"/>
+			<Item class="type:x-xmb/module-action" key="hen_gall" attr="hen_gall"/>
+			<Item class="type:x-xmb/module-action" key="hen_gps3" attr="hen_gps3"/>
+			<Item class="type:x-xmb/module-action" key="hen_gps2" attr="hen_gps2"/>
+			<Item class="type:x-xmb/module-action" key="hen_gps1" attr="hen_gps1"/>			
+			<Item class="type:x-xmb/module-action" key="hen_gpsp" attr="hen_gpsp"/>
+			<Item class="type:x-xmb/module-action" key="hen_gpsn" attr="hen_gpsn"/>
+			<Item class="type:x-xmb/module-action" key="hen_ghb" attr="hen_ghb"/>
+			<Item class="type:x-xmb/module-action" key="hen_grg" attr="hen_grg"/>
+			<Query class="type:x-xmb/folder-pixmap"	key="old_int" attr="old_int" src="#old_int_item"/>
+		</Items>
+	</View>
+
+	<View id="old_int_item">
+		<Attributes>
+			<Table key="old_int">
+				<Pair key="info"><String>net_package_install</String></Pair>
+				<Pair key="pkg_src"><String>https://github.com/nikolaevich23/man/raw/master/XMB/xmb-g-stand.pkg</String></Pair>
+				<Pair key="pkg_src_qa"><String>https://github.com/nikolaevich23/man/raw/master/XMB/xmb-g-stand.pkg</String></Pair>
+				<Pair key="content_name"><String>msg_install</String></Pair>
+				<Pair key="content_id"><String>CUSTOM-INSTALLER_00-0000000000000000</String></Pair>
+				<Pair key="prod_pict_path"><String>/dev_flash/vsh/resource/explore/icon/uninstall_hen.png</String></Pair>
+ 			</Table> 
+		</Attributes> 
+			<Items>
+			<Item class="type:x-xmb/xmlnpsignup" key="old_int" attr="old_int"/>
+		</Items> 
+	</View>
+	
+		<!-- Confirmations -->
+	<View id="seg_confirm_delete_license">
+		<Attributes>
+			<Table key="confirm_delete_license">
+				<Pair key="icon_rsc"><String>tex_warning</String></Pair>
+				<Pair key="title_rsc"><String>msg_remove_license_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_ask_license_action</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>remove_license</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action" key="confirm_delete_license" attr="confirm_delete_license" />				
+		</Items>
+	</View>
+
+	<View id="seg_confirm_accountid_overwrite">
+		<Attributes>
+			<Table key="confirm_overwrite_id">
+				<Pair key="icon_rsc"><String>tex_warning</String></Pair>
+				<Pair key="title_rsc"><String>msg_patch_accountid_overwrite_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_ask_acc_overwrite_action</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>set_accountid_overwrite</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action" key="confirm_overwrite_id" attr="confirm_overwrite_id" />				
+		</Items>
+	</View>
+	
+	<View id="seg_confirm_accountid_empty">
+		<Attributes>
+			<Table key="confirm_remove_id">
+				<Pair key="icon_rsc"><String>tex_warning</String></Pair>
+				<Pair key="title_rsc"><String>msg_patch_accountid_remove_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_ask_acc_overwrite_action</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>remove_accountid</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action" key="confirm_remove_id" attr="confirm_remove_id" />				
+		</Items>
+	</View>
+
+	<View id="seg_confirm_fs_check">
+		<Attributes>
+			<Table key="confirm_fs_check">
+				<Pair key="icon_rsc"><String>tex_warning</String></Pair>
+				<Pair key="title_rsc"><String>msg_fs_check_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_ask_fs_check_action</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>fs_check</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action" key="confirm_fs_check" attr="confirm_fs_check" />				
+		</Items>
+	</View>
+
+	<View id="seg_confirm_fsm">
+		<Attributes>
+			<Table key="confirm_fsm">
+				<Pair key="icon_rsc"><String>tex_warning</String></Pair>
+				<Pair key="title_rsc"><String>msg_service_mode_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_ask_fsm_action</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>service_mode</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action" key="confirm_fsm" attr="confirm_fsm" />				
+		</Items>
+	</View>
+
+	<View id="seg_confirm_rsod_fix">
+		<Attributes>
+			<Table key="confirm_rsod_fix">
+				<Pair key="icon_rsc"><String>tex_warning</String></Pair>
+				<Pair key="title_rsc"><String>msg_rsod_fix_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_ask_rsod_fix_action</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>rsod_fix</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action" key="confirm_rsod_fix" attr="confirm_rsod_fix" />				
+		</Items>
+	</View>
+
+	<View id="seg_confirm_rebuild_db">
+		<Attributes>
+			<Table key="confirm_rebuild_db">
+				<Pair key="icon_rsc"><String>tex_warning</String></Pair>
+				<Pair key="title_rsc"><String>msg_rebuild_db_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_ask_rebuild_db_action</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>rebuild_db</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action" key="confirm_rebuild_db" attr="confirm_rebuild_db" />				
+		</Items>
+	</View>
+
+	<View id="seg_confirm_recovery">
+		<Attributes>
+			<Table key="confirm_recovery">
+				<Pair key="icon_rsc"><String>tex_warning</String></Pair>
+				<Pair key="title_rsc"><String>msg_recovery_mode_title</String></Pair>
+				<Pair key="info_rsc"><String>msg_ask_recovery_action</String></Pair>
+				<Pair key="module_name"><String>xai_plugin</String></Pair>
+				<Pair key="module_action"><String>recovery_mode</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action" key="confirm_recovery" attr="confirm_recovery" />				
+		</Items>
+	</View>
+</XMBML>
